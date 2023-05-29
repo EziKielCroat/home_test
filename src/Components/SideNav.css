@@ -1,0 +1,74 @@
+
+.sidenav-container ul {
+    list-style-type: none;
+}
+
+.sidenav-container ul li {
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    padding-left: 60px;
+    height: 3.4em;
+    width: 13em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.house-icon {
+    transform: scale(1.25);
+    padding-right: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.home:hover {
+    color: #E6007A;
+    background-color: #ebebeb;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.person-icon {
+    transform: scale(1.25);
+    padding-right: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.account:hover {
+    color: #E6007A;
+    background-color: #ebebeb;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.play-arrow-icon {
+    transform: scale(1.25);
+    padding-right: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.getstarted:hover {
+    color: #E6007A;
+    background-color: #ebebeb;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.account-wallet-icon {
+    transform: scale(1.25);
+    padding-right: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.defi:hover {
+    color: #E6007A;
+    background-color: #ebebeb;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.sidenav-container ul li.active {
+    color: #E6007A;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+}
