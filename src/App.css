@@ -1,38 +1,147 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar {
+  height: fit-content;
+  padding-bottom: 0.15vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid #999999;
+}
+
+.search-container {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  padding: 1em;
+  padding-left: 3em;
+  width: 54vh;
+}
+ 
+.search-input {
+  width: 100%;
+  height: 50px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid #CCCCCC;
+  border-radius: 15px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: .3s ease;
+}
+ 
+.search-input::placeholder {
+  color: #333333;
+  font-size: medium;
+}
+
+.search-input:focus, .search-input:hover {
+  outline: none;
+  border: 2.25px solid;
+  border-color: #999999;
+  box-shadow: 0 0 0 4px #999999 / 10%;
+}
+ 
+.search-icon-change {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+  padding-left: 5vh
+}
+
+.move-button {
+  padding-left: 20px;
+}
+
+.move-button button {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 70px;
+  background-color: transparent;
+  border: transparent;
+  font-size: large;
+  color: #0d0c22;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.move-button:hover {
+  background-color: #ebebeb;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in;
+}
+
+.action-buttons {
+  float: right;
+  margin-left: auto;
+}
+
+.action-buttons button {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 10px;
+  font-size: large;
+  color: #0d0c22;
+  margin-right: 10px;
+}
+
+.create-account-button {
+  width: 150px !important;
+  background-color: #FF75B5 !important;
+  border-radius: 15px;
+  color: white !important;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Apply transition property to the button */
+}
+
+.create-account-button:hover {
+  border: 1px solid #df679f;
+  box-shadow: 3px 3px 3px 15px #b2537f / 40%;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.expand-more-icon-change {
+  height: 100%;
+  width: 100%;
+}
+
+.expand-more-button {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #ebebeb !important;
+  margin-right: 3em;
+  transition: background-color 0.3s ease-out; /* Apply transition property to the button */
 }
 
-.App-link {
-  color: #61dafb;
+.expand-more-button:hover {
+  background-color: #c9c7c7 !important;
+  transition: background-color 0.3s ease-in; /* Apply transition property to the button */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.create-account-button,
+.expand-more-button {
+  vertical-align: middle;
 }

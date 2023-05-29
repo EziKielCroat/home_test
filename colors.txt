@@ -1,0 +1,20 @@
+    Primary Color: #E6007A
+
+    Secondary Color: #552BBF
+
+    Background Color: #FFFFFF (White)
+
+    Button Hover Color: #FF75B5
+
+    Button Click Color: #CA004B
+
+    Text Color: #333333 (Dark Grey)
+    2 Text Color: #0d0c22;
+
+    Accent Color: #FFEA3D (Yellow)
+
+    Border Color: #CCCCCC (Light Gray)
+
+    Border Color: #999999 (Medium Gray)
+
+    Border Color: #666666 (Dark Gray)
