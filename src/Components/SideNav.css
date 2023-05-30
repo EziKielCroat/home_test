@@ -1,9 +1,15 @@
 
-.sidenav-container ul {
+.SideNav ul {
     list-style-type: none;
 }
 
-.sidenav-container ul li {
+.SideNav {
+    max-width: 40vh;
+    height: 100%;
+    margin-left: -45px;
+}
+
+.SideNav ul li {
     display: flex;
     align-items: center;
     direction: ltr;
@@ -13,62 +19,63 @@
     margin-bottom: 1em;
     cursor: pointer;
     background-color: transparent;
+    font-size: 17px;
 }
 
 .house-icon {
     transform: scale(1.25);
     padding-right: 10px;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .home:hover {
     color: #E6007A;
     background-color: #ebebeb;
     border-radius: 15px;
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .person-icon {
     transform: scale(1.25);
     padding-right: 10px;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .account:hover {
     color: #E6007A;
     background-color: #ebebeb;
     border-radius: 15px;
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .play-arrow-icon {
     transform: scale(1.25);
     padding-right: 10px;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .getstarted:hover {
     color: #E6007A;
     background-color: #ebebeb;
     border-radius: 15px;
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .account-wallet-icon {
     transform: scale(1.25);
     padding-right: 10px;
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .defi:hover {
     color: #E6007A;
     background-color: #ebebeb;
     border-radius: 15px;
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
 }
 
-.sidenav-container ul li.active {
+.SideNav ul li.active {
     color: #E6007A;
     border-radius: 15px;
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
 }

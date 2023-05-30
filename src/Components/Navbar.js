@@ -15,8 +15,8 @@ function Navbar() {
           <button onClick={() =>{console.log("move page.")}}>Move</button>
         </div>
         <div className="action-buttons">
-          <button className="create-account-button">Create account</button>
-          <button className="expand-more-button"><ExpandMoreIcon className="expand-more-icon expand-more-icon-change" /></button>
+          <button onClick={() =>{console.log("create-account.")}} className="create-account-button">Create account</button>
+          <button onClick={() =>{console.log("expand-more.")}} className="expand-more-button"><ExpandMoreIcon className="expand-more-icon expand-more-icon-change" /></button>
         </div>
       </nav>
     )

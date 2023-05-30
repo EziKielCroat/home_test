@@ -1,0 +1,40 @@
+
+.Main {
+    padding-left: 30px;
+    width: 100%;
+}
+
+.Main h2 {
+    padding: 1.75em;
+    padding-left: 0em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 30px;
+}
+
+.get-started {
+    background-color: white;
+    width: fit-content;
+    padding: 2em;
+    padding-right: 19vh;
+    border-radius: 16px;
+    box-shadow: 0 0 2px 1px #CCCCCC;
+    box-sizing: border-box;
+    filter: drop-shadow(1px 2px 4px #CCCCCC);
+}
+
+.get-started h3 {
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.get-started p {
+    color: #A0A8B4;
+    font-size: 18px;
+}
+.get-started .create-account-button {
+    height: 45px;
+    border: 0px;
+    font-size: medium;
+}

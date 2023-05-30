@@ -4,8 +4,8 @@
     padding-bottom: 0.15vh;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #999999;
-    background-color: white;
+    border-bottom: 1px solid #DDE1E9;
+    background-color: #FFFFFF;
 }
   
 .search-container {
@@ -27,15 +27,23 @@
     border: 2px solid #CCCCCC;
     border-radius: 15px;
     outline: none;
-    background-color: #f3f3f4;
-    color: #0d0c22;
-    transition: .3s ease;
+    background-color: #E9EDF2;
+    color: #0d0c22f7;
+    transition: 0.3s ease;
 }
    
 .search-input::placeholder {
     color: #333333;
     font-size: medium;
+    line-height: normal;
+    vertical-align: middle;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .search-input::placeholder {
+      margin-top: 10px;
+    }
+  }
   
 .search-input:focus, .search-input:hover {
     outline: none;
@@ -50,7 +58,8 @@
     fill: #a7a7a7;
     width: 1rem;
     height: 1rem;
-    padding-left: 5vh
+    padding-left: 5vh;
+    color: #7D879A;
 }
   
 .move-button {
@@ -99,7 +108,7 @@
     color: white !important;
     cursor: pointer;
     opacity: 1;
-    transition: opacity 0.3s ease; /* Apply transition property to the button */
+    transition: opacity 0.3s ease;
 }
   
 .create-account-button:hover {
@@ -112,6 +121,7 @@
 .expand-more-icon-change {
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
   
 .expand-more-button {
@@ -119,12 +129,12 @@
     align-items: center;
     background-color: #ebebeb !important;
     margin-right: 3em;
-    transition: background-color 0.3s ease-out; /* Apply transition property to the button */
+    transition: background-color 0.3s ease-out;
 }
   
 .expand-more-button:hover {
     background-color: #c9c7c7 !important;
-    transition: background-color 0.3s ease-in; /* Apply transition property to the button */
+    transition: background-color 0.3s ease-in;
 }
   
 .create-account-button,

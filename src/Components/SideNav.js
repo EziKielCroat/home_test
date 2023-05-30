@@ -30,7 +30,7 @@ function SideNav() {
   }, []);
 
   return (
-    <div className="sidenav-container">
+    <div className="SideNav">
       <ul>
         <li className={`home ${activeItem === 0 ? 'active' : ''}`} onClick={() => handleItemClick(0)}><HouseIcon className="house-icon" />Home</li>
         <li className={`account ${activeItem === 1 ? 'active' : ''}`} onClick={() => handleItemClick(1)}><PersonIcon className="person-icon" />My Account</li>
