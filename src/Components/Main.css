@@ -1,7 +1,12 @@
 
 .Main {
     padding-left: 30px;
-    width: 100%;
+    min-width: 100%;
+    overflow-y: hidden;
+}
+
+.Main:hover {
+    overflow-y: auto;
 }
 
 .Main h2 {
@@ -21,6 +26,7 @@
     box-shadow: 0 0 2px 1px #CCCCCC;
     box-sizing: border-box;
     filter: drop-shadow(1px 2px 4px #CCCCCC);
+    margin-bottom: 50px;
 }
 
 .get-started h3 {
@@ -33,8 +39,20 @@
     color: #A0A8B4;
     font-size: 18px;
 }
+
 .get-started .create-account-button {
     height: 45px;
     border: 0px;
     font-size: medium;
 }
+
+.hr-line {
+    width: fit-content;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #CCCCCC;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1.5px;
+  }
+  
