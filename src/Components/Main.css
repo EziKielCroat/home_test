@@ -1,14 +1,14 @@
-
 .Main {
     padding-left: 30px;
     min-width: 100%;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-
+  
 .Main:hover {
     overflow-y: auto;
 }
-
+  
 .Main h2 {
     padding: 1.75em;
     padding-left: 0em;
@@ -16,43 +16,104 @@
     padding-bottom: 0.5em;
     font-size: 30px;
 }
-
+  
 .get-started {
     background-color: white;
     width: fit-content;
     padding: 2em;
     padding-right: 19vh;
     border-radius: 16px;
-    box-shadow: 0 0 2px 1px #CCCCCC;
+    box-shadow: 0 0 2px 1px #cccccc;
     box-sizing: border-box;
-    filter: drop-shadow(1px 2px 4px #CCCCCC);
+    filter: drop-shadow(1px 2px 4px #cccccc);
     margin-bottom: 50px;
 }
-
+  
 .get-started h3 {
     margin-top: 5px;
     box-sizing: border-box;
     font-size: 24px;
 }
-
+  
 .get-started p {
-    color: #A0A8B4;
+    color: #a0a8b4;
     font-size: 18px;
 }
-
+  
 .get-started .create-account-button {
     height: 45px;
     border: 0px;
     font-size: medium;
 }
-
+  
 .hr-line {
     width: fit-content;
     margin: 0 auto;
     border: none;
-    border-top: 1px solid #CCCCCC;
+    border-top: 1px solid #cccccc;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: 1.5px;
-  }
+}
   
+.credentials {
+    display: flex;
+    align-items: flex-start;
+}
+  
+.credentials img {
+    margin-right: 10px;
+}
+  
+.transaction span {
+    color: #999999;
+    font-size: 14px;
+}
+  
+.transaction p {
+    margin-bottom: 2px;
+}
+  
+.transaction-details {
+    font-size: 16px;
+    padding-top: 0.7em;
+}
+  
+.transaction-details span {
+    color: #ff75b5;
+    font-size: 17px;
+}
+  
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: aqua;
+}
+  
+.tooltip .tooltiptext {
+    visibility: visible;    
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    font-size: medium;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -65px;
+    left: 48%;
+    margin-left: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.monetary-amount-div {
+    display: inline;
+}
