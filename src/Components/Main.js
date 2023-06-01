@@ -13,9 +13,9 @@ function Main() {
     mainRef.current.classList.remove('hovered');
   };
 
-  const truncate = (word) => {
-    if (word.length >= 13) {
-      let wordShorted = word.slice(0, 13) + '...';
+  const truncate = (word, n) => {
+    if (word.length >= n) {
+      let wordShorted = word.slice(0, n) + '...';
       return wordShorted;
     }
     return word;
@@ -35,20 +35,21 @@ function Main() {
       </div>
 
       <h2>See transactions on Polkadot chain.</h2>
-      <div className="transaction">
-        <div className="credentials">
-          <img src={logo} alt="pfp" className="p_img" />
-          <div>
-            <p>{truncate('1682aSxgj3HeD1R18DWc6BPpSQMzHhvPr5jXJgJSLPr58Aeh')}</p>
-            <span>1 hour ago</span>
+      <div className="transactions">
+        <div className="transaction">
+          <div className="credentials">
+            <img src={logo} alt="pfp" className="p_img" />
+            <div>
+              <p>{truncate('1682aSxgj3HeD1R18DWc6BPpSQMzHhvPr5jXJgJSLPr58Aeh', 30)}</p>
+              <span>1 hour ago</span>
+            </div>
+          </div>
+          <div className="transaction-details">
+            <p>sent <div className="monetary-amount-div"><span className="monetary-amount">  1.03 DOT </span></div> to <span>bc1q6l08rtj6j907r2een0jqs6l7qnruwyxfshmf8a</span></p>
+            <div className="tooltip"><span className="tooltiptext">5.39$</span></div>
           </div>
         </div>
-        <div className="transaction-details">
-          <p>sent <div className="monetary-amount-div"><span className="monetary-amount">  1.03 DOT </span></div> to <span>{truncate('bc1q6l08rtj6j907r2een0jqs6l7qnruwyxfshmf8a')}</span></p>
-          <div className="tooltip"><span className="tooltiptext">Tooltip text</span></div>
-        </div>
       </div>
-
       <p>Work In Progress.</p>
     </main>
   );

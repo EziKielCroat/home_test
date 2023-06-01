@@ -1,15 +1,26 @@
 import './App.css';
+
 import Navbar from './Components/Navbar';
 import SideNav from './Components/SideNav';
 import Main from './Components/Main';
+import MoreDropdown from './Components/MoreDropdown';
+
+import { useState } from 'react';
 
 function App() {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar toggleDropdown={toggleDropdown} />
       <div className="content">
-        <SideNav />
+        <SideNav homeHighlight={true} />
         <Main />
+        {dropdownVisible && <MoreDropdown />}
       </div>
     </div>
   );
