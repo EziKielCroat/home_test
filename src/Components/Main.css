@@ -4,6 +4,7 @@
     padding-right: 30px;
     min-width: 45%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .Main:hover {

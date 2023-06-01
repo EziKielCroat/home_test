@@ -1,0 +1,28 @@
+
+.more-dropdown {
+    background-color: #FFFFFF;
+    height: auto;
+    max-height: 50vh;
+    width: 30vh;
+    margin-top: 5px;
+    display: flex;
+    position: absolute;
+    border-radius: 12px;
+    filter: drop-shadow(4px 3px 8px #CCCCCC);
+    right: 22px;
+    z-index: 1;
+}
+
+.more-dropdown ul li {
+    list-style-type: none;
+    height: 3.45em;
+    cursor: pointer;
+}
+
+.more-dropdown ul li:hover {
+    background-color: #ebebeb;
+}
+
+.more-dropdown ul li:nth-child(1) {
+    padding-top: 1em;
+}

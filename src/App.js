@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar toggleDropdown={toggleDropdown} />
+      <Navbar toggleDropdown={toggleDropdown} dropdownVisible={dropdownVisible}/>
       <div className="content">
         <SideNav homeHighlight={true} />
         <Main />

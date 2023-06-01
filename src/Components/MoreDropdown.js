@@ -5,7 +5,13 @@ function MoreDropdown() {
 
     return(
         <div id="more-dropdown" className="more-dropdown">
-            <h3>retarded</h3>
+            <ul>
+                <li>Settings</li>
+                <li>Development</li>
+                <li>Theme</li>
+                <li>Currency</li>
+                <li>Contact & support</li>
+            </ul>
         </div>
     )
 }
