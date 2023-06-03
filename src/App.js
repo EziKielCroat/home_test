@@ -13,7 +13,7 @@ function App() {
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
   };
-
+  
   return (
     <div className="App">
       <Navbar toggleDropdown={toggleDropdown} dropdownVisible={dropdownVisible}/>

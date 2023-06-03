@@ -124,7 +124,7 @@
     z-index: 1;
     top: -65px;
     left: 48%;
-    margin-left: 16px;
+    margin-left: 40px;
     opacity: 0;
     transition: opacity 0.3s;
 }

@@ -5,30 +5,15 @@ import PersonIcon from '@mui/icons-material/Person';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 
-import { useState, useEffect} from 'react';
+import { useState} from 'react';
 
 function SideNav(props) {
   const [activeItem, setActiveItem] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
   const {homeHighlight} = props;
 
   const handleItemClick = (index) => {
     setActiveItem(index);
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <div className="SideNav">

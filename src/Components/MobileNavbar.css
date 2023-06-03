@@ -1,0 +1,14 @@
+
+.search-container {
+    float: left;
+}
+
+.more-mobile {
+    float: right;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.menu-icon {
+    color: #999999;
+}
