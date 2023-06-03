@@ -7,6 +7,15 @@
     border-bottom: 1px solid #DDE1E9;
     background-color: #FFFFFF;
 }
+
+@media(max-width: 834px) {
+    .move-button {
+        display: none;
+    }
+    .action-buttons {
+        display: none;
+    }
+}
   
 .search-container {
     display: flex;
