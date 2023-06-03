@@ -14,10 +14,6 @@
         margin-right: auto;
     }
 }
-
-.Main:hover {
-    overflow-y: auto;
-}
   
 .Main h2 {
     padding: 1.75em;
@@ -100,6 +96,14 @@
   
 .transaction p {
     margin-bottom: 2px;
+}
+
+.transaction {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
   
 .transaction-details {

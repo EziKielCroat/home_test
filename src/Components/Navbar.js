@@ -1,6 +1,7 @@
 import './Navbar.css';
 import { Search } from '@mui/icons-material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar({ toggleDropdown, dropdownVisible }) {
 
@@ -16,6 +17,9 @@ function Navbar({ toggleDropdown, dropdownVisible }) {
       <div className="action-buttons">
         <button onClick={() => console.log("create-account.")} className="create-account-button">Create account</button>
         {dropdownVisible ? <button onClick={() => {toggleDropdown()}} className="highlight expand-more-button"><ExpandMoreIcon className="expand-more-icon expand-more-icon-change" /></button>: <button onClick={() => {toggleDropdown()}} className="expand-more-button"><ExpandMoreIcon className="expand-more-icon expand-more-icon-change" /></button>}
+      </div>
+      <div className="more-mobile">
+            <MenuIcon className="menu-icon" fontSize="large" sx={{ color: "#7D879A" }}/>
       </div>
     </nav>
   );

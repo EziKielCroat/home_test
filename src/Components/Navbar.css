@@ -9,12 +9,41 @@
 }
 
 @media(max-width: 834px) {
+
     .move-button {
         display: none;
     }
+
     .action-buttons {
         display: none;
     }
+
+    .more-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: 15px;
+        padding: 0.5em;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .more-mobile:hover {
+        background-color: #ebebeb;
+    }
+
+    .search-container {
+        float: left;
+    }
+}
+
+@media (min-width: 835px) {
+    .more-mobile {
+        display: none;
+    }
+}
+
+.menu-icon {
+    cursor: pointer;
 }
   
 .search-container {

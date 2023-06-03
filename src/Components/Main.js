@@ -1,17 +1,9 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import logo from '../Untitled.png';
 import './Main.css';
 
 function Main() {
   const mainRef = useRef(null);
-
-  const handleMouseEnter = () => {
-    mainRef.current.classList.add('hovered');
-  };
-
-  const handleMouseLeave = () => {
-    mainRef.current.classList.remove('hovered');
-  };
 
   const truncate = (word, n) => {
     if (word.length >= n) {
@@ -22,7 +14,7 @@ function Main() {
   };
 
   return (
-    <main className="Main" ref={mainRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <main className="Main" ref={mainRef}>
       <h2>See what's going on Polkadot</h2>
 
       {/* Display this window only if the user is not logged in */}
@@ -40,7 +32,7 @@ function Main() {
           <div className="credentials">
             <img src={logo} alt="pfp" className="p_img" />
             <div>
-              <p>{truncate('1682aSxgj3HeD1R18DWc6BPpSQMzHhvPr5jXJgJSLPr58Aeh', 30)}</p>
+              <p className="truncate">{truncate("1682aSxgj3HeD1R18DWc6BPpSQMzHhvPr5jXJgJSLPr58Aeh", 20)}</p>
               <span>1 hour ago</span>
             </div>
           </div>
