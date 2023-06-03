@@ -1,11 +1,12 @@
-
 .Main {
     padding-left: 30px;
     padding-right: 30px;
     min-width: 45%;
     overflow-x: hidden;
     overflow-y: hidden;
-
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media(max-width: 834px) {
@@ -78,11 +79,18 @@
     height: fit-content;
     background-color: #FFFFFF;
     border-radius: 8px;
-    filter: drop-shadow(1px 2px 3px #CCCCCC);
+    filter: drop-shadow(5px 4px 7px #CCCCCC);
+    min-width: 300px;
 }
 
 .transactions {
+    height: fit-content;
     width: calc(100% - 2em);
+}
+
+.transaction {
+    margin-bottom: 1em;
+    height: fit-content;
 }
 
 .transaction {
@@ -100,9 +108,7 @@
 
 .transaction {
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    height: fit-content;
     word-wrap: break-word;
 }
   

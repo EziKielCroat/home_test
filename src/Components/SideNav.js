@@ -24,6 +24,10 @@ function SideNav(props) {
         <li className={`getstarted ${activeItem === 2 ? 'active' : ''}`} onClick={() => handleItemClick(2)}><PlayArrowIcon className="play-arrow-icon" />Get Started</li>
         <li className={`defi ${activeItem === 3 ? 'active' : ''}`} onClick={() => handleItemClick(3)}><AccountBalanceWalletIcon className="account-wallet-icon" />DeFi</li>
       </ul>
+
+      <div className="tos">
+        <a href="#"><p>Terms Of Service</p></a>
+      </div>
     </div>
   );
 }

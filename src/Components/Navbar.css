@@ -84,7 +84,7 @@
     box-shadow: 0 0 0 4px #999999 / 10%;
 }
    
-.search-icon-change {
+.search-icon {
     position: absolute;
     left: 1rem;
     fill: #a7a7a7;
@@ -92,6 +92,10 @@
     height: 1rem;
     padding-left: 5vh;
     color: #7D879A;
+}
+
+.search-container .search-icon:nth-of-type(2) {
+    display: none;
 }
   
 .move-button {

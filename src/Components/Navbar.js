@@ -8,8 +8,8 @@ function Navbar({ toggleDropdown, dropdownVisible }) {
   return (
     <nav className="Navbar">
       <div className="search-container">
-        <Search className="search-icon search-icon-change" />
-        <input placeholder="Search for accounts, transactions..." type="search" className="search-input" />
+        <Search className="search-icon" />
+        <input type="search" placeholder="Search for accounts, transactions..." className="search-input" />
       </div>
       <div className="move-button">
         <button onClick={() => console.log("move page.")}>Move</button>

@@ -9,7 +9,7 @@ body {
 }
 
 #root {
-  height: 100%;
+  height: fit-content;
 }
 
 .App {
@@ -21,5 +21,4 @@ body {
 .content {
   display: flex;
   height: 100%;
-  overflow: hidden;
 }

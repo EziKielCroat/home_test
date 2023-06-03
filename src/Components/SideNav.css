@@ -85,3 +85,26 @@
         display: none;
     }
 }
+
+.SideNav .tos a{
+    color: #182237;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    padding-left: 93px;
+    height: 3.4em;
+    width: 13em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 17px;
+    margin-top: 18em;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.SideNav .tos a:hover {
+    background-color: #ebebeb;
+    color: #E6007A;
+}
