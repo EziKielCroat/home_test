@@ -1,35 +1,49 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './MobileNavbar.css';
 
-function MobileNavbar({ visible }) {
+function MobileNavbar({ visible, setVisibleOriginal }) {
   const mobileNavbarRef = useRef(null);
+  const overlayRef = useRef(null);
+  const [isVisible, setVisible] = useState(visible);
 
-  const handleClickOutside = (event) => {
-    if (mobileNavbarRef.current && !mobileNavbarRef.current.contains(event.target)) {
-      // Clicked outside the MobileNavbar, hide it
+  let mobileNavbarClassName = `MobileNavbar ${isVisible ? 'visible' : ''}`;
+  let overlayClassName = `Overlay ${isVisible ? 'visible' : ''}`;
+
+  useEffect(() => {
+    if (mobileNavbarRef.current && isVisible) {
       setVisible(false);
+      mobileNavbarRef.current.classList.add('visible');
+      setVisible(true);
+    } else if (mobileNavbarRef.current && !isVisible) {
+      mobileNavbarRef.current.classList.remove('visible');
+      overlayRef.current.classList.remove('visible');
+      setTimeout(() => {
+        setVisible(false);
+        setVisibleOriginal(false);
+      }, 550);
+    }
+  }, [isVisible, setVisibleOriginal]);
+
+  const hideNavbar = () => {
+    if (mobileNavbarRef.current && overlayRef.current) {
+      mobileNavbarRef.current.classList.remove('visible');
+      overlayRef.current.classList.remove('visible');
+      setTimeout(() => {
+        setVisible(false);
+        setVisibleOriginal(false);
+      }, 550);
     }
   };
 
-  useEffect(() => {
-    if (visible) {
-      document.addEventListener('click', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, [visible]);
-
-  const [isVisible, setVisible] = useState(visible);
-  const mobileNavbarClassName = `MobileNavbar ${isVisible ? 'visible' : ''}`;
-
   return (
-    <div className={mobileNavbarClassName} ref={mobileNavbarRef}>
-      <div className="">
-        {/* Mobile navbar content */}
-      </div>
-    </div>
+    <>
+      {isVisible && <div className={overlayClassName} onClick={hideNavbar} ref={overlayRef}></div>}
+      {isVisible && (
+        <div className={mobileNavbarClassName} ref={mobileNavbarRef}>
+          {/* Mobile navbar content */}
+        </div>
+      )}
+    </>
   );
 }
 

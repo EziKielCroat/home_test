@@ -18,6 +18,7 @@ function App() {
 
   const toggleMobileNavbar = () => {
     setMobileNavbarVisible(!mobileNavbarVisible);
+    console.log(mobileNavbarVisible);
   };
   
   return (
@@ -27,7 +28,7 @@ function App() {
         <SideNav homeHighlight={true} />
         <Main />
         {dropdownVisible && <MoreDropdown />}
-        {mobileNavbarVisible && <MobileNavbar visible={mobileNavbarVisible} setVisible={setMobileNavbarVisible} />} {/* Pass the visibility state as a prop */}
+        {mobileNavbarVisible && (<MobileNavbar visible={mobileNavbarVisible} setVisibleOriginal={setMobileNavbarVisible} />)}
         </div>
     </div>
   );
