@@ -22,6 +22,11 @@
         height: 0%;
         transition: right 0.5s ease-out;
     }
+    .Overlay.visible {
+        width: 0% !important;
+        height: 0% !important;
+        transition: all 0.5s ease-out;
+    }
 }
 
 .Overlay {
@@ -36,4 +41,23 @@
   width: 100%;
   height: 100%;
   background-color: #16191dbf;
+}
+
+.MobileNavbarUl {
+    list-style-type: none;
+}
+
+.MobileNavbarLi {
+    height: 6em;
+    width: 85%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0.9em;
+    border-radius: 10px;
+}
+
+.MobileNavbarLi:hover {
+    background-color: #ebebeb;
 }
