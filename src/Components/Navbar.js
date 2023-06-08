@@ -3,12 +3,12 @@ import { Search } from '@mui/icons-material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MenuIcon from '@mui/icons-material/Menu';
 
-function Navbar({ toggleDropdown, dropdownVisible, toggleMobileNavbar }) {
+function Navbar({ toggleDropdown, dropdownVisible, toggleMobileNavbar, toggleMobileSearch }) {
 
   return (
     <nav className="Navbar">
       <div className="search-mobile">
-        <button><Search className="search-icon-mobile" fontSize="large"/></button>
+        <button><Search className="search-icon-mobile" fontSize="large" onClick={toggleMobileSearch}/></button>
       </div>
       <div className="search-container">
         <Search className="search-icon" />
