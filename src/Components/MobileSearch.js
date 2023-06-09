@@ -1,29 +1,19 @@
 
 import './MobileSearch.css';
 import CloseIcon from '@mui/icons-material/Close';
+import { Search } from '@mui/icons-material';
 
-function MobileSearch({toggleMobileSearch}) {
+function MobileSearch({ toggleMobileSearch }) {
   return (
     <div className="MobileSearch">
-        <div className="mobile-search-input">
-            <input placeholder="Search for accounts, transactions..."/>
-        </div>
-
-        <div className="search-results">
-            <div className="accounts-results">
-                <span className="section-span">Accounts</span>
-                {/* div account stiliziran sa svim racunima sa queryija*/}
-            </div>
-
-            <div className="transactions-results">
-            <span className="section-span" >Transactions</span>
-                {/* div transaction stiliziran sa svim transakcijama sa queryija*/}
-            </div>
-        </div>
-
-        <div className="search-footer">
-            <CloseIcon className="close-icon" fontSize="large" onClick={toggleMobileSearch}/>
-        </div>
+      <div className="search-close-parent">
+        <h3>Search</h3>
+        <CloseIcon className="close-icon" fontSize="medium" onClick={toggleMobileSearch} />
+      </div>
+      <div className="search-container-mobile">
+        <Search className="search-icon-mobile-2" />
+        <input type="search" placeholder="Search for accounts, transactions..." className="search-input" />
+      </div>
     </div>
   );
 }
