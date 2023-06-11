@@ -24,7 +24,7 @@ function App() {
 
   const toggleMobileSearch = () => {
     setMobileSearchVisible(!mobileSearchVisible);
-  }
+  };
   
   return (
     <div className="App">
