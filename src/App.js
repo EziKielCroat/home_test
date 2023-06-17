@@ -16,11 +16,11 @@ function App() {
   
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
-  };
+  }
 
   const toggleMobileNavbar = () => {
     setMobileNavbarVisible(!mobileNavbarVisible);
-  };
+  }
 
   const toggleMobileSearch = () => {
     setMobileSearchVisible(!mobileSearchVisible);
