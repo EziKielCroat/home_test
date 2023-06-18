@@ -26,7 +26,7 @@ function SideNav(props) {
       </ul>
 
       <div className="tos">
-        <a href="#"><p>Terms Of Service</p></a>
+        <a href=""><p>Terms Of Service</p></a>
       </div>
     </div>
   );
