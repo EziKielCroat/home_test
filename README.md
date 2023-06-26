@@ -1,9 +1,9 @@
-# Demo dizajn za moguci projekt na wallet tracking, transaction tracking, getting started platform za polkadot
+# Chainalaze
+
+Chainalayze je web platforma koja omogućuje praćenje i analiziranje walletova i chainova. Ova web platforma bi bila napravljena da može analizirati Substrate based chains. 
 
 
-
-# Projektne faze
-- [x] - Opis projekta
+# Projektne faze- [x] - Opis projekta
 - [x] - Alpha izgled aplikacije
 - [ ] - Početna struktura aplikacije (frontend)
 - [ ] - Početna struktura aplikacije (backend)
