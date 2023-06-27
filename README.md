@@ -1,10 +1,10 @@
-# Chainalaze
+# Chainalyze
 
-Chainalayze je web platforma koja omogućuje praćenje i analiziranje walletova i chainova. Ova web platforma bi bila napravljena da može analizirati Substrate based chains. 
+Chainalyze je web platforma koja omogućuje praćenje i analiziranje walletova i chainova. Ova web platforma bi bila napravljena da može analizirati Substrate based chains. 
 
-
-# Projektne faze- [x] - Opis projekta
-- [x] - Alpha izgled aplikacije
+# Projektne faze- [x] - 
+- [] - Planiranje platforme
+- [] - Alpha izgled aplikacije
 - [ ] - Početna struktura aplikacije (frontend)
 - [ ] - Početna struktura aplikacije (backend)
 - [ ] - Prototip
